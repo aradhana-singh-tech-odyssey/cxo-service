@@ -1,3 +1,4 @@
+
 const roleMiddleware = (requiredRoles = []) => {
   return (req, res, next) => {
     if (!requiredRoles.includes(req.user.role)) {
@@ -6,5 +7,6 @@ const roleMiddleware = (requiredRoles = []) => {
     next();
   };
 };
+
 
 export default roleMiddleware;
