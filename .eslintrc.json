@@ -1,0 +1,34 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": {
+    "@typescript-eslint/eslint-plugin": true,
+    "@typescript-eslint/parser": true,
+    "react-eslint": true
+  },
+  "rules": {
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-undef": "error",
+    "no-unused-vars": "warn",
+    "react/prop-types": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "@typescript-eslint/no-unused-vars": "warn"
+  },
+  "settings": {
+    "import/resolver": "node",
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"]
+  }
+}

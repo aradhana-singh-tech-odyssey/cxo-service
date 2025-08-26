@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "lint": "eslint .",
+     "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +24,10 @@
   },
   "type": "module",
   "devDependencies": {
-    "esbuild": "^0.25.8"
+    "@typescript-eslint/eslint-plugin": "^8.41.0",
+    "@typescript-eslint/parser": "^8.41.0",
+    "esbuild": "^0.25.8",
+    "eslint": "^9.34.0",
+    "eslint-plugin-react": "^7.37.5"
   }
 }
